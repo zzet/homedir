@@ -1,0 +1,7 @@
+#def notify(message, body, urgency, icon = :info)
+#  system("notify-send --urgency=#{urgency} --icon=#{icon} '#{message}' '#{body}'")
+#end
+
+#on :exit do
+#  notify('Capistrano Task: Finished', ARGV.join(' '), :low)
+#end

@@ -1,0 +1,35 @@
+[user]
+	name = Andrey Kumanyaev
+	email = me@zzet.org
+  user = zzet
+[push]
+  default = tracking
+#[pager]
+#    color = false
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[diff]
+  renamelimit = 0
+[merge]
+  summary = true
+  tool = vimdiff
+[alias]
+  st = status
+  ci = commit
+  br = branch -v
+  co = checkout
+  lg = log --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
+  ll = log -10 --pretty=format:\"%h %Cblue%ar %Cgreen%an%Creset: %s %Cred%d\"
+  gr = log --graph --pretty=format:\"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d\"
+  where = branch -av --contains
+  up = pull --rebase
+  put = push origin HEAD
+  tc = diff --cached
+	rmdf = !git rm $(git ls-files --deleted)
+	tree = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
+[core]
+	excludesfile = /Users/zzet/.gitconfig
+  pager = less -FRSX
